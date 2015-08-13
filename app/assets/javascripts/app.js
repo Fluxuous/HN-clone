@@ -14,5 +14,5 @@ angular.module('flapperNews', ['ui.router', 'templates'])
 			templateUrl: 'posts/_posts.html',
 			controller: 'PostsCtrl'
 		});
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('home');
 }]);
