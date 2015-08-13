@@ -25,6 +25,8 @@ gem "simple_form"
 gem "title"
 gem "uglifier"
 gem "unicorn"
+gem "angular-rails-templates"
+gem "sprockets", '2.12.3'
 
 group :development do
   gem "spring"
