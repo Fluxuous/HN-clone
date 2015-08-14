@@ -8,9 +8,7 @@ angular.module('flapperNews')
 
 	$scope.addComment = function(){
 		if ($scope.body === '') { return; }
-		posts.addComment(post.id, {
-				body: $scope.body,
-				author: 'user',
+		posts.addComment(post.id, { body: $scope.body, author: 'user',
 		}).success(function(comment) {
 			$scope.post.comments.push(comment);
 		});
