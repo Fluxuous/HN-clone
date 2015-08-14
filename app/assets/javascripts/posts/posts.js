@@ -31,7 +31,7 @@ function($http){
 		});
 	};
 
-	o.addComment = function(id) {
+	o.addComment = function(id, comment) {
 		return $http.post('/posts/' + id + '/comments.json', comment);
 	};
 
